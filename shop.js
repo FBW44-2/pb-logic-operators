@@ -7,6 +7,7 @@ const applesAmount = 3; // pieces in store
 
 const amountToBuy = 5; // pieces
 
+// Using logical AND (&&)
 // pseudocode
 // say buy if wallet > = amount to buy * price and amount to buy is in store
 
@@ -15,12 +16,25 @@ const amountToBuy = 5; // pieces
 // else
 //     say cannot buy
 
+// if (
+//     amountToBuy * applesPrice <= wallet &&
+//     amountToBuy <= applesAmount
+// ) {
+//     console.log('yes, buy');
+// } else {
+//     console.log('cannot buy');
+// }
+
+
+// Using logical OR (||)
+// pseudocode
+// say cannot buy if I cannot afford it or if there are not enough pieces in stock
 if (
-    amountToBuy * applesPrice <= wallet &&
-    amountToBuy <= applesAmount
+    amountToBuy * applesPrice > wallet ||
+    amountToBuy > applesAmount
 ) {
-    console.log('yes, buy');
-} else {
     console.log('cannot buy');
+} else {
+    console.log('yes, buy');
 }
 
