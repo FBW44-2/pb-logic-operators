@@ -36,6 +36,14 @@ if (word.indexOf(a) !== -1 && word.indexOf(a) < index) {
 // false  true   false
 // true   false  false
 
+// Truth table
+// a || b
+// a      b      result
+// false  false  false
+// true   true   true
+// false  true   true
+// true   false  true
+
 const indexOfO = word.indexOf(o);
 if (indexOfO !== -1 && indexOfO < index) {
     index = indexOfO;
